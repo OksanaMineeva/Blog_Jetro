@@ -1,0 +1,177 @@
+.title
+	display: flex
+	&__left, &__right
+		background-color: $help_decor
+		flex: 1 1 auto
+
+	&__left
+		+r(1100)
+			flex: 0 1 75px
+		+r(1035)
+			flex-basis: auto
+
+	&__center
+		background-color: $main_decor
+		flex-basis: 940px
+		padding: 22px 20px 16px
+		+bebas
+		color: #fff
+		text-transform: uppercase
+		margin: 0 10px
+		font-size: 24px
+		+r(1035)
+			flex-basis: 100%
+
+.frame
+	&_first
+		margin-top: 14px
+	&_media
+		margin-top: 57px
+	&_quotes
+		margin-top: 47px
+	&_link
+		margin-top: 45px
+	&__icon
+		display: block
+		width: 75px
+		height: 75px
+		margin-left: -85px
+		+r(1035)
+			display: none
+		&_slider
+			background: $main_decor url(../img/icon_slider.png) no-repeat center center
+		&_img
+			background: $main_decor url(../img/icon_img.png) no-repeat center center
+		&_video
+			background: $main_decor url(../img/icon_video.png) no-repeat center center
+		&_quotes
+			background: $main_decor url(../img/icon_quotes.png) no-repeat center center
+		&_link
+			background: $main_decor url(../img/icon_link.png) no-repeat center center
+	&__end-line
+		height: 14px
+		background: #fff url(../img/end-line.png) repeat-x
+		margin-top: 45px
+		margin-right: 15px
+
+
+.slider
+	margin-bottom: 22px
+	&__img
+		+r(900)
+			width: 100%
+
+.article
+	margin-top: -75px
+	+r(1035)
+		margin-top: 0
+	&__text
+		display: flex
+		+r(670)
+			display: block
+.short-info
+	margin-top: -5px
+	font-size: 12px
+	flex: 0 0 140px
+	padding-left: 2px
+	line-height: 20px
+	+r(670)
+		display: flex
+		justify-content: space-around
+		margin-bottom: 15px
+	&__heading
+		+bebas
+		color: $main_decor
+	&__text
+		color: #bababa
+		+helvLight
+		letter-spacing: 0.2px
+		margin-bottom: 10px
+.tag
+	color: #bababa
+	+helvLight
+	letter-spacing: 0.2px
+	padding-right: 3px
+	&:not(:first-child):before
+		content: "|"
+		padding-right: 6px
+
+		
+	&:hover
+		text-decoration: underline
+
+
+.content
+	margin-left: 6px
+	margin-bottom: 2px
+	margin-right: 15px
+	flex: 1 1 auto
+	letter-spacing: -0.25px
+	&__heading
+		display: block
+		+bebas
+		color: $main_decor
+
+	&__paragraph
+		color: #414141;
+		+helvMedium
+		font-size: 12px
+		margin-top: 17px
+		margin-left: 3px
+		line-height: 1.5
+		&:first-of-type
+			margin-top: 14px
+
+.article-quotes
+	margin-bottom: 54px
+	padding: 20px 10px 20px 35px
+	min-height: 75px
+	background: #f1f1f1 url(../img/bg_quotes.png)
+	&__quote
+		padding-left: 42px
+		background: transparent url(../img/quotes.png) no-repeat
+		color: #474747;
+		+helvItalic
+		font-size: 13px
+		line-height: 18px;
+
+.article-link
+	&__heading
+		color: $main_decor
+		+bebas
+		font-size: 18px
+		letter-spacing: 0.35px
+	&__link
+		color: #a0a0a0
+		+helvLSTroman
+		font-size: 12px
+		line-height: 18px
+		letter-spacing: 0.1px
+		margin-left: 2px
+	&__text
+		margin-top: 19px
+		margin-left: 2px
+		color: #414141
+		+helvLSTroman
+		font-size: 12px
+		line-height: 18px
+
+.pagination
+	display: flex
+	margin: 42px 0 50px
+
+	padding-left: 3px
+	&__item
+		width: 26px
+		height: 26px
+		display: block
+		background-color: $help_decor
+		margin-right: 4px
+		padding: 7px 10px 4px
+		color: #ffffff
+		+bebas
+		font-size: 14px
+		&_is-active
+			background-color: $main_decor
+
+

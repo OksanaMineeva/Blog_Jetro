@@ -1,0 +1,45 @@
+.out
+	background: #fff url(img/bg.jpg) repeat
+.header
+	max-width: 960px
+	margin: 0 auto
+	padding: 25px 10px 15px
+	display: flex
+	justify-content: space-between
+.sections
+	max-width: 960px
+	margin: 0 auto
+	padding: 10px
+	display: flex
+	justify-content: space-between
+	+r(1100)
+		margin-left: 75px
+	+r(1035)
+		margin: 0 auto
+		padding-left: 10px
+	+r(960)
+		display: block
+	
+	
+		
+
+.main-section
+	width: 72%
+	+r(960)
+		margin: 0 auto
+		width: 660px
+	+r(670)
+		width: 100%
+		
+.aside-section
+	margin-top: 15px
+	width: 23%
+	+r(960)
+		display: flex
+		width: 660px
+		margin: 0 auto
+		justify-content: space-between
+	+r(670)
+		width: 100%
+		flex-direction: column
+		align-items: center

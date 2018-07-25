@@ -1,0 +1,51 @@
+.logo
+	+bebas
+	font-size: 18px
+	letter-spacing: -0.6px
+	&__start
+		color: $main_decor
+	&__end
+		color: $help_decor
+
+.navigation
+	display: flex
+	margin-top: 10px
+	+r(670)
+		display: none
+	&__item
+		+bebas
+		color: #B9B9B9
+		text-transform: uppercase
+		padding-left: 27px
+		letter-spacing: 0.05px
+		&_is-active
+			color: $main_decor
+		&:hover
+			color: $help_decor
+
+.menu-small
+	width: 40px
+	height: 40px
+	background: transparent url(../img/menu.png) no-repeat 
+	background-size: cover
+	margin-right: 15px
+	display: none
+	z-index: 1
+	&:hover, &_is-active
+		background-image: url(../img/menu_hover.png)
+	+r(670)
+		display: block
+
+.navigation-small
+	position: absolute
+	width: 100%
+	display: none
+	&__item
+		width: 100%
+		align-items: center
+		background-color: #fff
+		padding: 10px
+.menu_link
+	+bebas
+	color: $main-decor
+	padding: 10px
