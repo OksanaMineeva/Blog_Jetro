@@ -1,5 +1,6 @@
 .title
 	display: flex
+	margin-bottom: 15px
 	&__left, &__right
 		background-color: $help_decor
 		flex: 1 1 auto
@@ -21,15 +22,7 @@
 		font-size: 24px
 		+r(1035)
 			flex-basis: 100%
-.frame
-	&_first
-		margin-top: 14px
-	&_media
-		margin-top: 57px
-	&_quotes
-		margin-top: 47px
-	&_link
-		margin-top: 45px
+.post
 	&__icon
 		display: block
 		width: 75px
@@ -48,15 +41,12 @@
 		&_link
 			background: $main_decor url(../img/icon_link.png) no-repeat center center
 	&__end-line
+		margin-bottom: 57px
 		height: 14px
 		background: #fff url(../img/end-line.png) repeat-x
-		margin-top: 45px
+		margin-top: 30px
 		margin-right: 15px
-.slider
-	margin-bottom: 22px
-	&__img
-		+r(900)
-			width: 100%
+
 .article
 	margin-top: -75px
 	+r(1035)
@@ -66,7 +56,6 @@
 		+r(670)
 			display: block
 .short-info
-	margin-top: -5px
 	font-size: 12px
 	flex: 0 0 140px
 	padding-left: 2px
@@ -77,6 +66,7 @@
 		margin-bottom: 15px
 	+r(400)
 		display: block
+.info-block
 	&__heading
 		+bebas
 		color: $main_decor
@@ -97,23 +87,119 @@
 		text-decoration: underline
 .content
 	margin-left: 6px
-	margin-bottom: 2px
 	margin-right: 15px
 	flex: 1 1 auto
-	letter-spacing: -0.25px
+	color: #414141;
+	+helvMedium
+	font-size: 12px
+	padding-left: 3px
+	line-height: 1.5
+	letter-spacing: -0.25px	
+	p 
+		margin-bottom: 18px
+
 	&__heading
+		margin-bottom: 10px
 		display: block
 		+bebas
 		color: $main_decor
-	&__paragraph
-		color: #414141;
-		+helvMedium
+		font-size: 18px
+		letter-spacing: 0px
+
+.picture
+	margin-bottom: 22px
+	max-width: 670px
+	max-height: 300px
+	overflow: hidden
+	position: relative
+	&__img
+		width: 100%
+		height: 300px
+
+.video
+	position: relative
+	padding-bottom: 56.25%
+	padding-top: 30px
+	height: 0
+	overflow: hidden
+	margin-bottom: 10px
+	&__title
+		display: flex
+		position: absolute
+		z-index: 5
+		align-items: stretch
+		top: 10px
+	&__buttons
+		position: absolute
+		z-index: 5
+		top: 0
+		right: 0
+		margin-right: 20px
+		margin-top: 20px
+		display: flex
+		flex-direction: column
+	video
+		position: absolute
+		top: -15px
+		left: 0
+		width: 100%
+		height: 100%
+.channel-logo
+	width: 51px
+	height: 51px
+	background-color: rgba(0,0,0,.7)
+	margin: 10px
+
+.video-info
+	margin-top: 10px
+	+helvLSThv
+	font-size: 18px
+	color: #fff
+	&__name
+		color: #00adef
+		background-color: rgba(0,0,0,.7)
+		margin-bottom: 5px
+		display: inline-block
+		padding: 3px
+		padding-left: 10px
+		padding-right: 10px
+		
+	&__channel
+		color: #00adef
+	&__wrap
 		font-size: 12px
-		margin-top: 17px
-		margin-left: 3px
-		line-height: 1.5
-		&:first-of-type
-			margin-top: 14px
+		+helvLSTroman
+		background-color: rgba(0,0,0,.7)
+		padding: 2px
+		padding-left: 10px
+
+.video-btn
+	padding-top: 30px
+	padding-bottom: 15px
+	color: #fff
+	font-size: 9px
+	+helvLSTmd
+	text-transform: uppercase
+	width: 50px
+	height: 40px
+	border-radius: 5px
+	margin-bottom: 10px
+	&_like
+		background: rgba(0,0,0,.7) url(../img/like.png) no-repeat 50% 20%
+		&:hover
+			background: rgba(0,0,0,.7) url(../img/like_hov.png) no-repeat 50% 20%
+			color: #00adef
+	&_share
+		background: rgba(0,0,0,.7) url(../img/share.png) no-repeat 50% 20%
+		&:hover
+			background: rgba(0,0,0,.7) url(../img/share_hov.png) no-repeat 50% 20%
+			color: #00adef
+	&_embed
+		background: rgba(0,0,0,.7) url(../img/embed.png) no-repeat 50% 20%
+		&:hover
+			background: rgba(0,0,0,.7) url(../img/embed_hov.png) no-repeat 50% 20%
+			color: #00adef
+
 .article-quotes
 	margin-bottom: 54px
 	padding: 20px 10px 20px 35px
@@ -127,6 +213,7 @@
 		font-size: 13px
 		line-height: 18px;
 .article-link
+	margin-bottom: 50px
 	&__heading
 		color: $main_decor
 		+bebas

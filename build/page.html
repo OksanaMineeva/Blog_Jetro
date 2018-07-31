@@ -11,7 +11,7 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <header class="header">
+      <header class="wow rubberBand header">
         <a class="logo" href="#">
           <h1 class="logo__start">jet
             <span class="logo__end">ro</span>
@@ -39,25 +39,25 @@
         <button class="menu-small"></button>
         <ul class="navigation-small">
           <li class="navigation-small__item">
-            <a href="#" class="menu_link">home</a>
+            <a href="#" class="navigation__link">home</a>
           </li>
           <li class="navigation-small__item">
-            <a href="#" class="menu_link">about us</a>
+            <a href="#" class="navigation__link">about us</a>
           </li>
           <li class="navigation-small__item">
-            <a href="#" class="menu_link">blog</a>
+            <a href="#" class="navigation__link">blog</a>
           </li>
           <li class="navigation-small__item">
-            <a href="#" class="menu_link">portfolio</a>
+            <a href="#" class="navigation__link">portfolio</a>
           </li>
           <li class="navigation-small__item">
-            <a href="#" class="menu_link">contact us</a>
+            <a href="#" class="navigation__link">contact us</a>
           </li>
         </ul>
       </header>
       <div class="page-blog">
         <!-- start title section -->
-        <div class="title">
+        <div class="wow rubberBand title">
           <div class="title__left"></div>
           <h2 class="title__center">Blog</h2>
           <div class="title__right"></div>
@@ -68,140 +68,177 @@
           <!-- start main section -->
           <main class="main-section">
             <!-- start first article with slider -->
-            <article class="frame frame_first">
+            <article class="wow bounceInLeft post" data-wow-delay="1s">
               <a href="#">
-                <div class="frame__icon frame__icon_slider"></div>
+                <div class="post__icon post__icon_slider"></div>
               </a>
               <div class="article">
                 <div class="slider">
-                  <img class="slider__img" src="img/slider_1.jpg" alt=""> </div>
+                  <img class="slider__img" src="img/slider_1_1.jpg" alt="">
+                  <img class="slider__img" src="img/slider_1_2.jpg" alt="">
+                  <img class="slider__img" src="img/slider_1_3.jpg" alt="">
+                  <img class="slider__img" src="img/slider_1_4.jpg" alt=""> </div>
                 <div class="article__text">
                   <div class="short-info">
-                    <h4>
-                      <a href="" class="short-info__heading">Date</a>
-                    </h4>
-                    <p class="short-info__text">April 15, 2012 </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Tags</a>
-                    </h4>
-                    <p class="short-info__text">
-                      <a href="#" class="tag">Website</a>
-                      <a href="#" class="tag">Design</a>
-                    </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Comments</a>
-                    </h4>
-                    <p class="short-info__text">4</p>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Date</a>
+                      </h4>
+                      <p class="info-block__text">April 15, 2012</p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Tags</a>
+                      </h4>
+                      <p class="info-block__text">
+                        <a href="#" class="tag">Website</a>
+                        <a href="#" class="tag">Design</a>
+                      </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Comments</a>
+                      </h4>
+                      <p class="info-block__text">4</p>
+                    </div>
                   </div>
                   <div class="content">
                     <h3>
                       <a href="" class="content__heading">Top WordPress Themes of 2012</a>
                     </h3>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                    <p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
                       instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.</p>
-                    <p class="content__paragraph">Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
                       ...</p>
                   </div>
                 </div>
               </div>
-              <div class="frame__end-line"></div>
+              <div class="post__end-line"></div>
             </article>
             <!-- end first first article with slider -->
             <!-- start second article with image -->
-            <article class="frame frame_media">
+            <article class="wow bounceInRight post" data-wow-offset="200">
               <a href="#">
-                <div class="frame__icon frame__icon_img"></div>
+                <div class="post__icon post__icon_img"></div>
               </a>
               <div class="article">
-                <div class="slider">
-                  <img class="slider__img" src="img/slider_2.jpg" alt=""> </div>
+                <div class="picture">
+                  <img class="picture__img lazy" data-src="img/slider_2.jpg" alt=""> </div>
                 <div class="article__text">
                   <div class="short-info">
-                    <h4>
-                      <a href="" class="short-info__heading">Date</a>
-                    </h4>
-                    <p class="short-info__text">April 15, 2012 </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Tags</a>
-                    </h4>
-                    <p class="short-info__text">
-                      <a href="#" class="tag">Website</a>
-                      <a href="#" class="tag">Design</a>
-                    </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Comments</a>
-                    </h4>
-                    <p class="short-info__text">4</p>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Date</a>
+                      </h4>
+                      <p class="info-block__text">April 15, 2012 </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Tags</a>
+                      </h4>
+                      <p class="info-block__text">
+                        <a href="#" class="tag">Website</a>
+                        <a href="#" class="tag">Design</a>
+                      </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Comments</a>
+                      </h4>
+                      <p class="info-block__text">4</p>
+                    </div>
                   </div>
                   <div class="content">
                     <h3>
                       <a href="" class="content__heading">Jesus Typography Wallpaper Giveaway!</a>
                     </h3>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                    <p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
                       instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.</p>
-                    <p class="content__paragraph">Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
                       ...</p>
                   </div>
                 </div>
               </div>
-              <div class="frame__end-line"></div>
+              <div class="post__end-line"></div>
             </article>
             <!-- end second article with image -->
             <!-- start third article with video -->
-            <article class="frame frame_media">
+            <article class="wow bounceInLeft post" data-wow-offset="200">
               <a href="#">
-                <div class="frame__icon frame__icon_video"></div>
+                <div class="post__icon post__icon_video"></div>
               </a>
               <div class="article">
-                <div class="slider">
-                  <img class="slider__img" src="img/slider_3.jpg" alt=""> </div>
+                <div class="video">
+                  <div class="video__title">
+                    <div class="channel-logo"></div>
+                    <div class="video-info">
+                      <a class="video-info__name" href="#">Title For Movie Goes Here</a>
+                      <p class="video-info__wrap">from
+                        <a class="video-info__channel" href="#">Your Channel</a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="video__buttons">
+                    <button class="video-btn video-btn_like">like</button>
+                    <button class="video-btn video-btn_share">share</button>
+                    <button class="video-btn video-btn_embed">embed</button>
+                  </div>
+                  <video controls>
+                    <source src="video/movie.mp4" type="video/mp4"> Your browser does not support the video tag. </video>
+                </div>
                 <div class="article__text">
                   <div class="short-info">
-                    <h4>
-                      <a href="" class="short-info__heading">Date</a>
-                    </h4>
-                    <p class="short-info__text">April 15, 2012 </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Tags</a>
-                    </h4>
-                    <p class="short-info__text">
-                      <a href="#" class="tag">Website</a>
-                      <a href="#" class="tag">Design</a>
-                    </p>
-                    <h4>
-                      <a href="" class="short-info__heading">Comments</a>
-                    </h4>
-                    <p class="short-info__text">4</p>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Date</a>
+                      </h4>
+                      <p class="info-block__text">April 15, 2012 </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Tags</a>
+                      </h4>
+                      <p class="info-block__text">
+                        <a href="#" class="tag">Website</a>
+                        <a href="#" class="tag">Design</a>
+                      </p>
+                    </div>
+                    <div class="info-block">
+                      <h4>
+                        <a href="" class="info-block__heading">Comments</a>
+                      </h4>
+                      <p class="info-block__text">4</p>
+                    </div>
                   </div>
                   <div class="content">
                     <h3>
                       <a href="" class="content__heading">Big Buck Bunny Trailer</a>
                     </h3>
-                    <p class="content__paragraph">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
+                    <p>Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide
                       instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu.</p>
-                    <p class="content__paragraph">Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
+                    <p>Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis
                       ...</p>
                   </div>
                 </div>
               </div>
-              <div class="frame__end-line"></div>
+              <div class="post__end-line"></div>
             </article>
             <!-- end third article with video -->
             <!-- start fourth article with quotes -->
-            <article class="frame frame_quotes">
+            <article class="wow bounceInRight post" data-wow-offset="200">
               <a href="#">
-                <div class="frame__icon frame__icon_quotes"></div>
+                <div class="post__icon post__icon_quotes"></div>
               </a>
               <div class="article article-quotes">
                 <p class="article-quotes__quote">Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you. </p>
               </div>
-              <div class="frame__end-line"></div>
+              <div class="post__end-line"></div>
             </article>
             <!-- end fourth article with quotes -->
             <!-- start fifth article with link -->
-            <article class="frame frame_link">
+            <article class="wow bounceInLeft post" data-wow-offset="200">
               <a href="#">
-                <div class="frame__icon frame__icon_link"></div>
+                <div class="post__icon post__icon_link"></div>
               </a>
               <div class="article article-link">
                 <h3>
@@ -210,11 +247,11 @@
                 <a href="#" class="article-link__link">www.bestpsdfreebies.com</a>
                 <p class="article-link__text">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei.</p>
               </div>
-              <div class="frame__end-line"></div>
+              <div class="post__end-line"></div>
             </article>
             <!-- end fifth article with link -->
             <!-- start pagination -->
-            <ul class="pagination">
+            <ul class="wow bounceInDown pagination" data-wow-delay="1s">
               <li>
                 <a href="#" class="pagination__item pagination__item_is-active">1</a>
               </li>
@@ -230,26 +267,26 @@
           <!-- end main section -->
           <aside class="aside-section">
             <!-- start aside bar with paragraph -->
-            <section class="aside-bar">
-              <div class="aside-title">
-                <h3>
-                  <a href="#" class="aside-title__heading">About Jetro </a>
-                </h3>
-                <div class="aside-title__decor"></div>
-              </div>
+            <div class="wow zoomIn aside-title" data-wow-delay="2s" data-wow-duration="0.5s">
+              <h3>
+                <a href="#" class="aside-title__heading">About Jetro </a>
+              </h3>
+              <div class="aside-title__decor"></div>
+            </div>
+            <section class="wow flipInX aside-bar" data-wow-delay="2.5s" data-wow-duration="0.5s">
               <div class="aside-bar__content">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.</p>
               </div>
             </section>
             <!-- end aside bar with paragraph -->
             <!-- start aside bar with categoris -->
-            <section class="aside-bar">
-              <div class="aside-title">
-                <h3>
-                  <a href="#" class="aside-title__heading">Categories </a>
-                </h3>
-                <div class="aside-title__decor"></div>
-              </div>
+            <div class="wow zoomIn aside-title" data-wow-delay="3s" data-wow-duration="0.5s">
+              <h3>
+                <a href="#" class="aside-title__heading">Categories </a>
+              </h3>
+              <div class="aside-title__decor"></div>
+            </div>
+            <section class="wow flipInX aside-bar" data-wow-delay="3.5s" data-wow-duration="0.5s">
               <div class="aside-bar__content">
                 <ul class="categoris">
                   <li>
@@ -287,59 +324,44 @@
             </section>
             <!-- end aside bar with categoris -->
             <!-- start aside bar with photos -->
-            <section class="aside-bar">
-              <div class="aside-title">
-                <h3>
-                  <a href="#" class="aside-title__heading">Photo Gallery </a>
-                </h3>
-                <div class="aside-title__decor"></div>
-              </div>
-              <div class="aside-bar__content">
-                <ul class="photos">
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_1">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_2">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_3">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_4">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_5">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_6">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_7">
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="photos__item">
-                      <img src="img/photo_1.jpg" alt="photo_8">
-                    </a>
-                  </li>
-                </ul>
+            <div class="wow zoomIn aside-title" data-wow-delay="4s" data-wow-duration="0.5s">
+              <h3>
+                <a href="#" class="aside-title__heading">Photo Gallery </a>
+              </h3>
+              <div class="aside-title__decor"></div>
+            </div>
+            <section class="wow flipInX aside-bar" data-wow-delay="4.5s" data-wow-duration="0.5s">
+              <div id="lightgallery" class="photos">
+                <a href="img/slid/1.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/1.jpg" alt="photo_1">
+                </a>
+                <a href="img/slid/2.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/2.jpg" alt="photo_2">
+                </a>
+                <a href="img/slid/3.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/3.jpg" alt="photo_3">
+                </a>
+                <a href="img/slid/4.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/4.jpg" alt="photo_4">
+                </a>
+                <a href="img/slid/5.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/5.jpg" alt="photo_5">
+                </a>
+                <a href="img/slid/6.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/6.jpg" alt="photo_3">
+                </a>
+                <a href="img/slid/7.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/7.jpg" alt="photo_4">
+                </a>
+                <a href="img/slid/8.jpg" class="photos__item">
+                  <img class="galery" src="img/slid/8.jpg" alt="photo_5">
+                </a>
               </div>
             </section>
             <!-- start aside bar with photos -->
+            <svg class="icon icon-left-arrow-angle">
+              <use xlink:href="img/sprite.svg#icon-left-arrow-angle"></use>
+            </svg>
           </aside>
         </div>
         <!-- end main and aside sections -->
@@ -348,7 +370,6 @@
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
   </body>

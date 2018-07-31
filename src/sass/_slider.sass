@@ -1,0 +1,37 @@
+.slider
+	margin-bottom: 22px
+	max-width: 670px
+	max-height: 300px
+	
+	overflow: hidden
+	position: relative
+	&__img
+		width: 100%
+		height: 300px
+
+#prev, #next
+	position: absolute
+	top: 37%
+	background-color: transparent
+	z-index: 1;
+	&:hover
+		.icon-left-arrow
+			fill: #E8603C
+#prev 
+	&:hover
+		.icon-left-arrow
+			fill: #E8603C
+#next
+	left: calc(100% - 54px)
+	&:hover
+		.icon-right-arrow
+			fill: #E8603C
+.icon-left-arrow 
+  width: 4em
+  height: 6em
+  fill: rgba(255,255,255,0.8)
+
+.icon-right-arrow 
+  width: 4em
+  height: 6em
+  fill: rgba(255,255,255,0.8)
