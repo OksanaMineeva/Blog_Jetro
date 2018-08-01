@@ -11,8 +11,12 @@ tl
 
 $('.menu-small').click(function() {
   if($('.navigation-small').height() === 0) {
-    	tl.play();
+    tl.play();
   } else {
+  	tl.timeScale(2);
     tl.reverse();
   }
 });
+
+
+
