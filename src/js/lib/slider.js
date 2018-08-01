@@ -1,3 +1,5 @@
+import 'slick-carousel';
+
 export default function startSlider() {
  	$('.slider').slick({
  		autoplay: true,

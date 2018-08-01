@@ -3,9 +3,14 @@
 .header
 	max-width: 960px
 	margin: 0 auto
-	padding: 25px 10px 15px
 	display: flex
 	justify-content: space-between
+	padding: 25px 0 15px
+	+r(1100)
+		margin-left: 75px
+	+r(1035)
+		margin: 0 auto
+	
 .sections
 	max-width: 960px
 	margin: 0 auto
@@ -29,10 +34,10 @@
 .aside-section
 	width: 23%
 	+r(960)
-		display: flex
+		
 		width: 660px
 		margin: 0 auto
-		justify-content: space-between
+		
 	+r(670)
 		width: 100%
 		flex-direction: column

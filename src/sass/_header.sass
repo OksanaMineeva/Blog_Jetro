@@ -2,6 +2,8 @@
 	+bebas
 	font-size: 18px
 	letter-spacing: -0.6px
+	padding-left: 10px
+
 	&__start
 		color: $main_decor
 	&__end
@@ -10,6 +12,7 @@
 .navigation
 	display: flex
 	margin-top: 10px
+	padding-right: 10px
 	+r(670)
 		display: none
 	&__item
@@ -26,6 +29,8 @@
 		+bebas
 		color: $main-decor
 		padding: 10px
+		+r(544)
+			padding: 5
 
 
 .menu-small
@@ -43,13 +48,29 @@
 
 .navigation-small
 	position: absolute
+	display: flex
 	width: 100%
 	z-index: 1
-	display: none
+	height: 0
+	overflow: hidden
+	background-color: $main_decor
+	margin-top: -25px
 	&__item
+		display: flex
+		text-align: center
+		align-items: center
+		justify-content: center
+		height: 0
+		overflow: hidden
 		width: 100%
 		align-items: center
+		
 		background-color: #fff
-		padding: 10px
+		&:hover
+			box-shadow: inset 0px 0px 15px 1px $main_decor
+		+r(544)
+			font-size: 13px
+			padding: 0
+
 		
 
