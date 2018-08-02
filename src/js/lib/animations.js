@@ -11,12 +11,14 @@ tl
 
 $('.menu-small').click(function() {
   if($('.navigation-small').height() === 0) {
+    tl.set('.menu-small', {className: '+=menu-small_is-active'});
     tl.play();
   } else {
+  	tl.set('.menu-small', {className: '-=menu-small_is-active'});
   	tl.timeScale(2);
     tl.reverse();
   }
 });
 
 
-
+  

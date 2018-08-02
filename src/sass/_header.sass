@@ -41,8 +41,13 @@
 	margin-right: 15px
 	display: none
 	z-index: 2
-	&:hover, &_is-active
+	&:hover 
 		background-image: url(../img/menu_hover.png)
+	&_is-active
+		background-image: url(../img/menu_active.png)
+		&:hover 
+			background-image: url(../img/menu_active.png)	
+		
 	+r(670)
 		display: block
 
